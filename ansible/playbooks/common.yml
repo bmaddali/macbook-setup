@@ -70,11 +70,11 @@
         state: present
       with_items: "{{ brew_taps }}"
 
-    - name: installing tools using homebrew cask
-      homebrew_cask:
-        name: "{{ item }}"
-        state: present
-      with_items: "{{ brew_cask_install }}"
+    # - name: installing tools using homebrew cask
+    #   homebrew_cask:
+    #     name: "{{ item }}"
+    #     state: present
+    #   with_items: "{{ brew_cask_install }}"
 
     - name: update homebrew and packages
       homebrew: update_homebrew=no upgrade_all=no
