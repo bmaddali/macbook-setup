@@ -60,8 +60,8 @@
       # - gnu-which   # GNU implementation of which utility
       - grep        # GNU grep utility
 
-  - brew_cask_install:
-      - java8         # Java Standard Edition Development Kit
+  # - brew_cask_install:
+  #     - java8         # Java Standard Edition Development Kit
 
   tasks:
     - name: install homebrew taps
