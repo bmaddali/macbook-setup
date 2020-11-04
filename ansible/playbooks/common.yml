@@ -86,23 +86,4 @@
       with_items: "{{ brew_install }}"
       ignore_errors: yes
 
-    - name: installing tools using homebrew with default names
-      homebrew:
-        name: "{{ item }}"
-        state: present
-        install_options: with-default-names
-      with_items: "{{ brew_install_with_default_names }}"
 
-    # - name: installing ci tools
-    #   homebrew:
-    #     name: "{{ item }}"
-    #     state: present
-    #   with_items:
-    #     # - jenkins            # Extendable open source continuous integration server
-    #     - sonar              # Manage code quality
-    #     # - sonar-scanner      # Launcher to analyze a project with SonarQube
-    #     - sonarlint          # provides pre-commit feedback on quality issues injected into code.
-   #     - artifactory        # Binary Repository Manager from JFrog
-   #     - artifactory-pro   # The Univeral Binary Repository
-   #     - flyway             # Database version control to control migrations
-   #     - nexus              # Binary Repository Manager from Sonatype
