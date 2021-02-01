@@ -3,6 +3,7 @@
   gather_facts: no
   tasks:
 
+    #helps save a few thousand keystrokes a day
     - name: installing zsh
       homebrew:
         name: "{{ item }}"
@@ -11,7 +12,7 @@
         - zsh             # UNIX shell (command interpreter)
         #- zsh-lovers      # Tips, tricks, and examples for zsh
         - z               # Tracks most-used directories to make cd smarter # Jump Around - https://github.com/rupa/z
-        - v               # Z for vim
+        - v               # Z for vim, https://github.com/rupa/v
         - zsh-completions  # Additional completion definitions for zsh
         - zsh-syntax-highlighting  # Fish shell like syntax highlighting for zsh
         - zsh-history-substring-search # Zsh port of Fish shell's history search
