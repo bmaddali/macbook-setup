@@ -55,12 +55,6 @@
         dest: ~/.zshrc
         line: "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-    # - name: configuring bottles
-    #   lineinfile:
-    #     dest: ~/.zshrc
-    #     line: "export HOMEBREW_BOTTLE_DOMAIN=https://retail-bint.corp.bmaddali.com/artifactory"
-        #line: "export HOMEBREW_ARTIFACT_DOMAIN==https://artifactory-iag.bmaddali.com/artifactory/homebrew"
-
     - name: .z
       shell: if [ ! -f "~/.z" ]; then touch  "$HOME/.z"; fi
 
